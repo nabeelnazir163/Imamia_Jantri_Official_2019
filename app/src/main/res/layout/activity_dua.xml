@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@color/light_yellow"
+    tools:context=".UI.Activities.duaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_bg_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+
+            <ImageView
+                android:id="@+id/backarraow_iv_dua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/back_arrow"
+                android:src="@drawable/ic_back_image"
+                android:padding="@dimen/eight"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:layout_marginEnd="@dimen/ten"
+                android:gravity="center"
+                android:text="@string/duas"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:padding="@dimen/eight"
+                />
+
+            <ImageView
+                android:id="@+id/share_iv_dua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:contentDescription="@string/share"
+                android:src="@drawable/ic_share_icon"
+                android:padding="@dimen/eight"
+                />
+
+            <ImageView
+                android:id="@+id/save_iv_dua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:contentDescription="@string/share"
+                android:src="@drawable/ic_rating_star_hollow"
+                android:padding="@dimen/eight"
+                />
+
+            <ImageView
+                android:id="@+id/unsave_iv_dua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:contentDescription="@string/share"
+                android:src="@drawable/ic_rating_star"
+                android:padding="@dimen/eight"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/dua_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:padding="@dimen/twenty"
+                android:text="In Your name O Allah, I live and die."
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:justificationMode="inter_word"
+                android:lineSpacingMultiplier="1.3"
+                android:maxLines="8"
+                />
+
+            <TextView
+                android:id="@+id/readmoretv_duaActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/readmore"
+                android:textColor="@color/com_facebook_blue"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/readlesstv_duaActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/readLess"
+                android:textColor="@color/com_facebook_blue"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webview"
+        android:visibility="gone"
+        ></WebView>
+
+</LinearLayout>

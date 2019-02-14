@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_bg_gradient"
+    tools:context=".UI.Activities.SigninScreen"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imamia_jantri_logo"
+            android:src="@drawable/logo"
+            />
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fb_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:gravity="center"
+            >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.33"
+                android:background="@android:color/black"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/or"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.33"
+                android:background="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/email_et_SI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/login_tv_bg"
+            android:fontFamily="sans-serif"
+            android:padding="15dp"
+            android:hint="@string/email_address"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/password_et_SI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/login_tv_bg"
+            android:fontFamily="sans-serif"
+            android:padding="15dp"
+            android:hint="@string/password"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,LabelFor" />
+
+        <Button
+            android:id="@+id/continueBtn_SI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/login_btn_bg"
+            android:padding="15dp"
+            android:text="@string/login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            >
+
+            <TextView
+                android:id="@+id/forgetPwd_signinScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forget_password"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:padding="8dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:gravity="center"
+            >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.33"
+                android:background="@android:color/black"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/or"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.33"
+                android:background="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_tv_SI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:layout_marginTop="@dimen/twenty"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/login_btn_bg"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "234249254590",
+    "firebase_url": "https://imamia-jantri-official-224418.firebaseio.com",
+    "project_id": "imamia-jantri-official-224418",
+    "storage_bucket": "imamia-jantri-official-224418.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234249254590:android:1a40a84367f79902",
+        "android_client_info": {
+          "package_name": "com.namobiletech.imamiajantri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234249254590-6b25jr9eid8la4umg5er0amqqc94euq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.namobiletech.imamiajantri",
+            "certificate_hash": "735eb4ad3e3786cfb3504223a23b4f6356ea6cfd"
+          }
+        },
+        {
+          "client_id": "234249254590-260polk7s4vivhra7jbf40bi7n1fcb92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.namobiletech.imamiajantri",
+            "certificate_hash": "6ea6b06085d24c686f1eb6d20788edf721a9ce3d"
+          }
+        },
+        {
+          "client_id": "234249254590-0vr0oofi19kmse1u6jenvriraufnfhqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlZLGi3c8Dw-u2Pho2cP08M5F2jkxV11c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234249254590-0vr0oofi19kmse1u6jenvriraufnfhqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

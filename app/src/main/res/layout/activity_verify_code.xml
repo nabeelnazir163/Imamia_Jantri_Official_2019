@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activities.verifyCode"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/confirm_Code_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmcode"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        />
+
+    <com.raycoarana.codeinputview.CodeInputView
+        android:id="@+id/confirmation_code"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:underline_color="#457ad1"
+        app:underline_selected_color="#9e1ace"
+        app:code_text_color="#b12eff"
+        app:error_color="#77ce9d"
+        app:input_type="numeric"
+        app:length_of_code="4"
+        app:animate_on_complete="false"
+        />
+
+</LinearLayout>

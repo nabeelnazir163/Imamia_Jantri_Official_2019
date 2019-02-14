@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/light_yellow"
+        >
+
+        <TextView
+            android:paddingTop="@dimen/twenty"
+            android:id="@+id/ayyat_arbi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twenty"
+            android:textSize="36sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_toStartOf="@+id/icon"
+            />
+
+        <RelativeLayout
+            android:id="@+id/icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            >
+
+            <TextView
+                android:id="@+id/ayyah_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ayaticon"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ayyat_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/twenty"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        />
+</LinearLayout>

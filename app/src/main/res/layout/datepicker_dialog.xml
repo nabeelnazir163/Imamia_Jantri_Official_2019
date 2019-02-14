@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    >
+
+    <TextView
+        android:id="@+id/note_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_year_to_navigate_through_years"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="@dimen/ten"
+        android:visibility="gone"
+        />
+
+    <DatePicker
+        android:background="@android:color/white"
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"
+        tools:ignore="UnusedAttribute"
+        android:headerBackground="@color/colorPrimary"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/datePicker_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/datePicker_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
